@@ -70,6 +70,8 @@ bool desktop_main_input_callback(InputEvent* event, void* context) {
                 main_view->callback(DesktopMainEventOpenFavoriteLeftLong, main_view->context);
             } else if(event->key == InputKeyRight) {
                 main_view->callback(DesktopMainEventOpenFavoriteRightLong, main_view->context);
+            } else if(event->key == InputKeyBack) {
+                main_view->callback(DesktopMainEventOpenPowerOff, main_view->context);
             }
         }
     } else {
